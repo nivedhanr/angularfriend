@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddfriendComponent } from './addfriend/addfriend.component';
+import { ViewfriendComponent } from './viewfriend/viewfriend.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddfriendComponent
+    AddfriendComponent,
+    ViewfriendComponent
   ],
   imports: [
     BrowserModule,
