@@ -11,6 +11,7 @@
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
 
                     <br><h2>Friend App</h2>
+                    
 
                     </div>
 
@@ -18,14 +19,14 @@
 
                     <label for="" class="form-label">Name</label>
 
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                    <label for="" class="form-label">Friend Name</label>
+                    <label for=""  class="form-label">Friend Name</label>
 
-                    <input type="text" class="form-control">
+                    <input name="friendName" [(ngModel)]="friendName" type="text" class="form-control">
 
                 </div>
 
@@ -33,7 +34,7 @@
 
                     <label for="" class="form-label">Description Your Friend</label>
 
-                    <textarea name="" id=""  rows="5" class="form-control"></textarea>
+                    <textarea name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" id=""  rows="5" class="form-control"></textarea>
 
                 </div>
 
@@ -41,13 +42,13 @@
 
                     <label for="" class="form-label">Friend Nick Name</label>
 
-                    <input type="text" class="form-control">
+                    <input name="friendNickName" [(ngModel)]="friendNickName" type="text" class="form-control">
 
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
-                    <button class="btn btn-success">Submit</button>
+                    <button (click)="readValues()" class="btn btn-success">Submit</button>
 
 
 
